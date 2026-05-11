@@ -1,0 +1,7 @@
+path: C:\Users\bibin\Downloads\where's_waldo_archive\processed_waldo
+train: images/train
+val:   images/val
+test:  images/test
+
+nc: 1
+names: ['waldo']
