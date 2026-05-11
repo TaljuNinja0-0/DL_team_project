@@ -1,17 +1,30 @@
-"딥러닝 실습 2조 월리를찾아라 데이터 전처리"
+# 🔍 딥러닝 실습 2조 - 월리를 찾아라 데이터 전처리
 
+---
 
-코드
-- waldo_step1.py: Step 1. Waldo 필터링 + 재라벨링
-- waldo_step2.py: Step 2. 데이터 검수
-- waldo_step3.py: Step 3. EDA 분석
-- waldo_step4.py: Step 4. 데이터 증강
+## 📁 폴더 구조
 
+```
+📦 프로젝트 루트
+├── 📂 dataset/              # 원본 데이터셋 (5개 클래스)
+├── 📂 processed/            # 원본 증강 데이터셋 (train/val/test 분할 완료)
+│
+├── 📂 processed_waldo/      # Waldo 단일 클래스 필터링 결과 (Step 1 출력)
+├── 📂 inspection_viz/       # 데이터 검수용 bbox 시각화 결과 (Step 2 출력)
+├── 📂 eda_output/           # EDA 분석 차트 결과 (Step 3 출력)
+└── 📂 augmented_waldo/      # 최종 증강 적용 데이터셋 (Step 4 출력)
+```
 
-원본 데이터셋: dataset
-원본 증강 데이터셋: processed
+---
 
-월리(단일 클래스) 탐지 데이터셋: processed_waldo
-데이터 검수용 bbox 표시 결과: inspection_viz
-eda 분석 결과: eda_output
-증강 적용한 데이터셋: augmented_waldo
+## 🗂️ 코드 설명
+
+| 파일 | 설명 |
+|------|------|
+| `waldo_step1.py` | Waldo 클래스 필터링 및 재라벨링 |
+| `waldo_step2.py` | bbox 검수, 클리핑, 시각화 |
+| `waldo_step3.py` | EDA 분석 |
+| `waldo_step4.py` | 데이터 증강 |
+
+---
+
